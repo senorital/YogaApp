@@ -1,9 +1,23 @@
 <resources>
 
-    <!-- Base application theme. -->
+    <!-- Base application theme -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
+        <!-- Customize your theme here -->
         <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+        <item name="android:datePickerDialogTheme">@style/CustomDatePicker</item>
+    </style>
+
+    <!-- Custom DatePicker Dialog Theme -->
+   <style name="CustomDatePicker" parent="Theme.AppCompat.Dialog">
+    <item name="android:datePickerStyle">@style/CustomDatePickerStyle</item>
+</style>
+
+    <!-- Customize the DatePicker itself -->
+    <style name="CustomDatePickerStyle" parent="android:Widget.Material.DatePicker">
+        <item name="android:textColorPrimary">#FF5722</item> <!-- Change text color -->
+        <item name="android:textColorSecondary">#FFC107</item> <!-- Change secondary text color -->
+        <item name="android:background">#000000</item> <!-- Background color -->
+        <item name="android:colorAccent">#4CAF50</item> <!-- Accent color -->
     </style>
 
 </resources>
